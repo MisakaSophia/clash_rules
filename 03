@@ -71,7 +71,6 @@ ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ch
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 ruleset=DIRECT,[]GEOIP,CN
-ruleset=DIRECT,[]GEOSITE,CN
 ruleset=🐟 漏网之鱼,[]FINAL
 ;设置规则标志位
 
