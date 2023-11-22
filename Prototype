@@ -125,4 +125,3 @@ custom_proxy_group=🔮 负载均衡`load-balance`(^(?!.*(电信|联通|移动|�
 enable_rule_generator=true
 overwrite_original_rules=true
 
-;clash_rule_base=https://raw.githubusercontent.com/cutethotw/ClashRule/main/GeneralClashConfig.yml
