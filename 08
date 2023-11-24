@@ -10,17 +10,18 @@
 ;设置规则标志位
 ruleset=🛑 广告拦截,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BlockHttpDNS/BlockHttpDNS.yaml
 ruleset=🛸 IP归属地伪装,clash-classic:https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/rule-provider.yaml
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Inside.list,no-resolve
-ruleset=🎯 国内流量,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml,no-resolve
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list,no-resolve
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Inside.list
+ruleset=🎯 国内流量,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/MisakaSophia/Nvidia-dl/main/Nvidia-dl.list
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/MisakaSophia/Steam-cdn/main/steam-cdn.list
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
 ruleset=📹 Pikpak-cdn,https://raw.githubusercontent.com/MisakaSophia/Pikpakdl/main/pikpakdl.list
 ruleset=📹 Pikpak,https://raw.githubusercontent.com/MisakaSophia/Pikpak/main/Pikpak.list
 ruleset=🪙 OKX,https://raw.githubusercontent.com/MisakaSophia/OKX-Domain/main/rules.list
 ruleset=🌸 bbsacgrip,https://raw.githubusercontent.com/MisakaSophia/acgrip-domain/main/rules.list
 ruleset=🛫 AIRPORRTsub,https://raw.githubusercontent.com/MisakaSophia/openclashrules/main/Nexitally-sub.list
 ruleset=📖 Zlibrary,clash-classic:https://raw.githubusercontent.com/MisakaSophia/Zlibrary-Domain/main/rules.yaml
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/MisakaSophia/Nvidia-dl/main/Nvidia-dl.list,no-resolve
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/MisakaSophia/Steam-cdn/main/steam-cdn.list,no-resolve
 ruleset=🎮 FGO-cdn,https://raw.githubusercontent.com/MisakaSophia/fgo-cdn/main/cdn.list
 ruleset=🎵 Spotify-cdn,clash-classic:https://raw.githubusercontent.com/MisakaSophia/Spotify-cdn/main/Spotify-cnd.yaml
 ruleset=🅿️ Paypal,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
@@ -45,7 +46,6 @@ ruleset=🎶 TikTok,clash-classic:https://raw.githubusercontent.com/blackmatrix7
 ruleset=🌍 国外媒体,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
 ruleset=🌏 国内媒体,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
 ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list,no-resolve
 ruleset=Ⓜ️ 微软搜索,clash-classic:https://raw.githubusercontent.com/MisakaSophia/bing-domain/main/bing-domain.yaml
 ruleset=🍎 苹果新闻,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
 ruleset=🍎 苹果代理,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml
@@ -56,8 +56,6 @@ ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
 ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
 ruleset=🚀 国外流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-ruleset=🎯 国内流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list,no-resolve
-ruleset=🎯 国内流量,[]GEOIP,CN,no-resolve
 ruleset=🐟 漏网之鱼,[]FINAL
 ;设置规则标志位
 
