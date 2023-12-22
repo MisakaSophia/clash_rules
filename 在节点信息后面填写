@@ -1,115 +1,128 @@
 rule-providers:
-  🚀 国外流量:
+  AppleNews:
     type: http
     behavior: classical
     format: yaml
     path: ./AppleNews.yaml
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml"
     interval: 600
-  🚀 国外流量:
+  AppleProxy:
     type: http
     behavior: classical
     format: yaml
     path: ./AppleProxy.yaml 
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml"
     interval: 600    
-  🎮 FGO-cdn:
+  FGO-cdn:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./FGO-cdn.list
     url: "https://raw.githubusercontent.com/MisakaSophia/fgo-cdn/main/cdn.list"
     interval: 600
-  🛑 广告拦截:
+  广告拦截:
     type: http
     behavior: classical
     format: yaml
     path: ./BlockHttpDNS.yaml 
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BlockHttpDNS/BlockHttpDNS.yaml"
     interval: 600
-  🛸 IP归属地伪装:
+  IP归属地伪装:
     type: http
     behavior: classical
     format: yaml
     path: ./anti-ip-attribution.yaml 
     url: "https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/rule-provider.yaml"
     interval: 600    
-  🌸 bbsacgrip:
+  bbsacgrip:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./bbsacgrip.list 
     url: "https://raw.githubusercontent.com/MisakaSophia/acgrip-domain/main/rules.list"
     interval: 600
-  🛫 AIRPORRTsub:
+  AIRPORRTsub:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./AIRPORRTsub.list
     url: "https://raw.githubusercontent.com/MisakaSophia/openclashrules/main/Nexitally-sub.list"
     interval: 600
-  〽️ MumuplayerGlobal:
+  MumuplayerGlobal:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./MumuplayerGlobal.list
     url: "https://raw.githubusercontent.com/MisakaSophia/openclashrules/main/MumuplayerGlobal.list"
     interval: 600
-  🎵 Spotify-login:
+  Spotify-login:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./Spotify-login.list 
     url: "https://raw.githubusercontent.com/MisakaSophia/Spotify-cdn/main/login5"
     interval: 600
-  📢 谷歌FCM:
+  谷歌FCM:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     path: ./FCM.list 
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
     interval: 600           
 rules:
-- GEOSITE,bing,🚀 国外流量
-- GEOSITE,cn,🎯 国内流量
-- GEOIP,telegram,📲 Telegram
-- GEOIP,twitter,📲 Telegram
-- GEOIP,facebooK,📲 Telegram
-- GEOSITE,telegram,📲 Telegram
-- GEOSITE,twitter,📲 Telegram
-- GEOSITE,line,📲 Telegram
-- GEOSITE,discord,📲 Telegram
-- GEOSITE,instagram,📲 Telegram
-- GEOSITE,whatsapp,📲 Telegram
-- GEOSITE,facebook,📲 Telegram
-- GEOSITE,netflix,🎥 Netflix
-- GEOSITE,youtube,📹 YouTube
-- GEOSITE,bahamut,📺 巴哈姆特
-- GEOSITE,spotify,🎵 Spotify
-- GEOSITE,tiktok,🎶 TikTok
-- GEOSITE,netflix,🌍 国外媒体
-- GEOSITE,tiktok,🌍 国外媒体
-- GEOSITE,disney,🌍 国外媒体
-- GEOSITE,niconico,🌍 国外媒体
-- GEOSITE,bbc,🌍 国外媒体
-- GEOSITE,bahamut,🌍 国外媒体
-- GEOSITE,hulu,🌍 国外媒体
-- GEOSITE,tvb,🌍 国外媒体
-- GEOSITE,hbo,🌍 国外媒体
-- GEOSITE,fox,🌍 国外媒体
-- GEOSITE,kktv,🌍 国外媒体
-- GEOSITE,naver,🌍 国外媒体
-- GEOSITE,now,🌍 国外媒体
-- GEOSITE,primevideo,🌍 国外媒体
-- GEOSITE,tver,🌍 国外媒体
-- GEOSITE,mytvsuper,🌍 国外媒体
-- GEOSITE,discoveryplus,🌍 国外媒体
-- GEOSITE,hkopentv,🌍 国外媒体
-- GEOSITE,acplay,🌍 国外媒体
-- GEOSITE,openai,🤖 ChatGPT
-- GEOSITE,z-library,📖 Zlibrary
-- GEOSITE,pikpak,📹 Pikpak
-- GEOSITE,okx,🪙 OKX
-- GEOSITE,paypal,🅿️ Paypal
-- GEOSITE,!cn,🚀 国外流量
-- MATCH,🐟 漏网之鱼
+  - GEOIP,lan,DIRECT,no-resolve
+  - GEOSITE,bing,🚀 国外流量
+  - RULE-SET,AppleNews,🚀 国外流量
+  - RULE-SET,AppleProxy,🚀 国外流量
+  - RULE-SET,FGO-cdn,🎮 FGO-cdn
+  - RULE-SET,广告拦截,🛑 广告拦截
+  - RULE-SET,IP归属地伪装,🛸 IP归属地伪装
+  - RULE-SET,bbsacgrip,🌸 bbsacgrip
+  - RULE-SET,AIRPORRTsub,🛫 AIRPORRTsub
+  - RULE-SET,MumuplayerGlobal,〽️ MumuplayerGlobal
+  - RULE-SET,Spotify-login,🎵 Spotify-login
+  - RULE-SET,谷歌FCM,📢 谷歌FCM
+  - GEOSITE,cn,🎯 国内流量
+  - GEOIP,cn,🎯 国内流量
+  - GEOSITE,geolocation-cn,🎯 国内流量
+  - GEOIP,telegram,📲 Telegram,no-resolve
+  - GEOIP,twitter,📲 Telegram,no-resolve
+  - GEOIP,facebooK,📲 Telegram,no-resolve
+  - GEOSITE,telegram,📲 Telegram
+  - GEOSITE,twitter,📲 Telegram
+  - GEOSITE,line,📲 Telegram
+  - GEOSITE,discord,📲 Telegram
+  - GEOSITE,instagram,📲 Telegram
+  - GEOSITE,whatsapp,📲 Telegram
+  - GEOSITE,facebook,📲 Telegram
+  - GEOSITE,netflix,🎥 Netflix
+  - GEOSITE,youtube,📹 YouTube
+  - GEOSITE,bahamut,📺 巴哈姆特
+  - GEOSITE,spotify,🎵 Spotify
+  - GEOSITE,tiktok,🎶 TikTok
+  - GEOSITE,netflix,🌍 国外媒体
+  - GEOSITE,tiktok,🌍 国外媒体
+  - GEOSITE,disney,🌍 国外媒体
+  - GEOSITE,niconico,🌍 国外媒体
+  - GEOSITE,bbc,🌍 国外媒体
+  - GEOSITE,bahamut,🌍 国外媒体
+  - GEOSITE,hulu,🌍 国外媒体
+  - GEOSITE,tvb,🌍 国外媒体
+  - GEOSITE,hbo,🌍 国外媒体
+  - GEOSITE,fox,🌍 国外媒体
+  - GEOSITE,kktv,🌍 国外媒体
+  - GEOSITE,naver,🌍 国外媒体
+  - GEOSITE,now,🌍 国外媒体
+  - GEOSITE,primevideo,🌍 国外媒体
+  - GEOSITE,tver,🌍 国外媒体
+  - GEOSITE,mytvsuper,🌍 国外媒体
+  - GEOSITE,discoveryplus,🌍 国外媒体
+  - GEOSITE,hkopentv,🌍 国外媒体
+  - GEOSITE,acplay,🌍 国外媒体
+  - GEOSITE,openai,🤖 ChatGPT
+  - GEOSITE,z-library,📖 Zlibrary
+  - GEOSITE,pikpak,📹 Pikpak
+  - GEOSITE,okx,🪙 OKX
+  - GEOSITE,paypal,🅿️ Paypal
+  - GEOSITE,geolocation-!cn,🚀 国外流量
+  - MATCH,🐟 漏网之鱼
