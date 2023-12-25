@@ -1,3 +1,172 @@
+ipv6: true
+allow-lan: true
+mixed-port: 7890
+unified-delay: true
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+geodata-mode: true
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+find-process-mode: strict
+global-client-fingerprint: random
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - "any:53"
+  auto-route: true
+  auto-detect-interface: true
+dns:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+  enhanced-mode: redir-host
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  fallback:
+    - "https://dns.cloudflare.com/dns-query#远程dns" 
+  nameserver-policy:
+    "+.internal.crop.com":
+      - "10.0.0.1"
+    "GEOSITE:bing":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "RULE-SET:AppleNews":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "RULE-SET:AppleProxy":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "RULE-SET:bbsacgrip":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "RULE-SET:MumuplayerGlobal":
+      - https://doh.pub/dns-query
+    "RULE-SET:谷歌FCM":
+      - https://doh.pub/dns-query
+    "RULE-SET:FGO-cdn":
+      - https://doh.pub/dns-query
+    "RULE-SET:广告拦截":
+      - https://doh.pub/dns-query
+    "RULE-SET:IP归属地伪装":
+      - https://doh.pub/dns-query
+    "GEOSITE:cn":
+      - https://doh.pub/dns-query
+    "GEOSITE:geolocation-cn":
+      - https://doh.pub/dns-query
+    "RULE-SET:AIRPORRTsub":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "RULE-SET:Spotify-login":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:telegram":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:twitter":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:line":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:discord":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:instagram":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:whatsapp":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:facebook":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:netflix":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:youtube":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:bahamut":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:spotify":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:tiktok":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:disney":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:niconico":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:bbc":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:hulu":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:tvb":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:hbo":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:fox":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:kktv":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:naver":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:now":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:tver":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:mytvsuper":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:discoveryplus":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:hkopentv":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:acplay":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:openai":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:z-library":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:pikpak":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:paypal":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:okx":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "geosite:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "GEOSITE:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query#远程dns"
+    "MATCH":
+      - "https://dns.cloudflare.com/dns-query#远程dns"    
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+
+
+
+
+
+
+
 rule-providers:
   AppleNews:
     type: http
