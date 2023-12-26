@@ -41,7 +41,7 @@ dns:
   listen: 0.0.0.0:1053
   ipv6: true
   default-nameserver:
-    - 223.5.5.5
+    - 223.6.6.6
   enhanced-mode: redir-host
   nameserver:
     - https://doh.pub/dns-query
@@ -49,117 +49,158 @@ dns:
   proxy-server-nameserver:
     - https://doh.pub/dns-query
   fallback:
-    - "https://dns.cloudflare.com/dns-query#远程dns" 
+    - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+    - "https://dns.google/dns-query#🚀 国外流量"
   nameserver-policy:
     "+.internal.crop.com":
       - "10.0.0.1"
     "GEOSITE:bing":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+      - "https://dns.google/dns-query#🚀 国外流量"
     "RULE-SET:AppleNews":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+      - "https://dns.google/dns-query#🚀 国外流量"
     "RULE-SET:AppleProxy":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+      - "https://dns.google/dns-query#🚀 国外流量"
     "RULE-SET:bbsacgrip":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌸 bbsacgrip"
+      - "https://dns.google/dns-query#🌸 bbsacgrip"
     "RULE-SET:MumuplayerGlobal":
       - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query     
     "RULE-SET:谷歌FCM":
-      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query   
     "RULE-SET:FGO-cdn":
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
     "RULE-SET:广告拦截":
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
     "RULE-SET:IP归属地伪装":
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
     "GEOSITE:cn":
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
     "GEOSITE:geolocation-cn":
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
     "RULE-SET:AIRPORRTsub":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+      - "https://dns.cloudflare.com/dns-query#🛫 AIRPORRTsub"
+      - "https://dns.google/dns-query#🛫 AIRPORRTsub"
     "RULE-SET:Spotify-login":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🎵 Spotify-login"
+      - "https://dns.google/dns-query#🎵 Spotify-login"
     "GEOSITE:telegram":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:twitter":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:line":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:discord":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:instagram":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:whatsapp":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:facebook":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📲 Telegram"
+      - "https://dns.google/dns-query#📲 Telegram"
     "GEOSITE:netflix":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🎥 Netflix"
+      - "https://dns.google/dns-query#🎥 Netflix"
     "GEOSITE:youtube":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📹 YouTube"
+      - "https://dns.google/dns-query#📹 YouTube"
     "GEOSITE:bahamut":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📺 巴哈姆特"
+      - "https://dns.google/dns-query#📺 巴哈姆特"
     "GEOSITE:spotify":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - https://doh.pub/dns-query
+      - "https://dns.cloudflare.com/dns-query#🎵 Spotify"
+      - "https://dns.google/dns-query#🎵 Spotify"
     "GEOSITE:tiktok":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🎶 TikTok"
+      - "https://dns.google/dns-query#🎶 TikTok"
     "GEOSITE:disney":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:niconico":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:bbc":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:hulu":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:tvb":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:hbo":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:fox":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:kktv":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:naver":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:now":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:tver":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:mytvsuper":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:discoveryplus":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:hkopentv":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:acplay":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🌍 国外媒体"
+      - "https://dns.google/dns-query#🌍 国外媒体"
     "GEOSITE:openai":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🤖 ChatGPT"
+      - "https://dns.google/dns-query#🤖 ChatGPT"
     "GEOSITE:z-library":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📖 Zlibrary"
+      - "https://dns.google/dns-query#📖 Zlibrary"
     "GEOSITE:pikpak":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#📹 Pikpak"
+      - "https://dns.google/dns-query#📹 Pikpak"
     "GEOSITE:paypal":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🅿️ Paypal"
+      - "https://dns.google/dns-query#🅿️ Paypal"
     "GEOSITE:okx":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
-    "geosite:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🪙 OKX"
+      - "https://dns.google/dns-query#🪙 OKX"
+    "GEOSITE:!cn":
+      - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+      - "https://dns.google/dns-query#🚀 国外流量"
     "GEOSITE:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query#远程dns"
+      - "https://dns.cloudflare.com/dns-query#🚀 国外流量"
+      - "https://dns.google/dns-query#🚀 国外流量"
     "MATCH":
-      - "https://dns.cloudflare.com/dns-query#远程dns"    
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
+      - "https://dns.cloudflare.com/dns-query#🐟 漏网之鱼"
+      - "https://dns.google/dns-query#🐟 漏网之鱼"
 
 
 
